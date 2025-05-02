@@ -107,4 +107,9 @@
 .card-text {
   text-align: center;
   overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

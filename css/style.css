@@ -2,9 +2,9 @@
   /* background-color: gray; */
   padding: 10px;
   margin: 10px;
+  display: flex;
 }
 .navbar ul {
-  display: flex;
   list-style: none;
   /* justify-content: space-between; */
 }
@@ -24,4 +24,9 @@
 .navlist ul li a {
   text-decoration: none;
   text-align: center;
+}
+
+.navbar .logo img {
+  height: "50px";
+  width: "50px";
 }

@@ -133,7 +133,9 @@
   text-align: center;
   gap: 20px;
   margin-top: 20px;
-  box-shadow: 10px 10px 5px 12px lightblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 123, 255, 0.15),
+    0 6px 20px 0 rgba(0, 123, 255, 0.15);
+
   padding: 20px;
 }
 .jobs p {
@@ -175,4 +177,24 @@
 .everyjobs p {
   /* margin-bottom: 10px; */
   text-align: justify;
+}
+
+/* start footer */
+
+.mainfooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.intro .image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* flex-direction: row; */
+}
+.intro img {
+  height: 150px;
+  width: auto;
 }

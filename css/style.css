@@ -146,11 +146,21 @@
   display: flex;
   flex-direction: row;
 }
-.forjob {
-  flex-wrap: wrap;
+.everyjobs {
+  /* flex-wrap: wrap; */
   display: flex;
   gap: 10px;
+  /* justify-content: center; */
+  align-items: flex-start;
+}
+.forjob {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 1rem;
 }
 .option h3 {
   font-size: 22px;
@@ -158,12 +168,12 @@
   color: purple;
 }
 
-.forjob span {
+.everyjobs span {
   font-size: 20px;
   color: rgb(39, 37, 37);
   margin-left: 10px;
 }
-.forjob p {
+.everyjobs p {
   /* margin-bottom: 10px; */
   text-align: justify;
 }

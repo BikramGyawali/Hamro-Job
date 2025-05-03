@@ -240,3 +240,17 @@
   color: rgb(102, 101, 101);
   padding-top: 10px;
 }
+.copy p span {
+  font-size: 30px;
+  font: bold;
+  font-weight: 900;
+  align-items: center;
+  padding: 7px;
+  color: rgb(18, 16, 16);
+}
+.copy p {
+  font-size: 25px;
+  font: bolder;
+  /* align-items: center; */
+  /* padding: 10px; */
+}

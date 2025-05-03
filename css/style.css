@@ -141,3 +141,29 @@
   color: gray;
   text-align: center;
 }
+
+.option {
+  display: flex;
+  flex-direction: row;
+}
+.forjob {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.option h3 {
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  color: purple;
+}
+
+.forjob span {
+  font-size: 20px;
+  color: rgb(39, 37, 37);
+  margin-left: 10px;
+}
+.forjob p {
+  /* margin-bottom: 10px; */
+  text-align: justify;
+}

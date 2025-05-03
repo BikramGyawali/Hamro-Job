@@ -6,11 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 1 0px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: gray;
+  margin-top: 50px;
 }
 .navlist ul {
   list-style: none;
@@ -45,9 +41,9 @@
 .navbar .logo img {
   height: 20vh;
   width: auto;
-  border-radius: 50%;
+  border-radius: 100%;
   /* margin-left: 20px; */
-  /* margin-top: 0px; */
+  margin-top: -60px;
 }
 
 .hero-section {
@@ -64,7 +60,6 @@
   padding: 20px;
   gap: 20px;
   position: relative;
-  margin-top: 120px;
 }
 .hero-section span {
   color: rgb(180, 2, 180);
@@ -156,7 +151,6 @@
   display: flex;
   gap: 10px;
   /* justify-content: center; */
-  align-items: flex-start;
 }
 .forjob {
   display: flex;

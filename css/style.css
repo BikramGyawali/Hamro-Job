@@ -351,3 +351,54 @@
   font-size: 25px;
   padding: 20px;
 }
+
+/* contact */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  margin: 20px;
+  align-items: flex-start;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin: 10px;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: rgb(102, 101, 101) 0px 0px 10px 0px,
+    rgb(102, 101, 101) 0px 0px 20px 0px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 3px;
+  text-align: start;
+  color: rgb(180, 2, 180);
+  font-size: 20px;
+  font-weight: bolder;
+  /* padding: 20px; */
+}
+
+.form1 input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form1 input:focus {
+  outline: none;
+  border-color: rgb(180, 2, 180);
+  box-shadow: 0 0 5px rgb(180, 2, 180);
+}

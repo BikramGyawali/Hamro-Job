@@ -258,3 +258,29 @@
   /* align-items: center; */
   /* padding: 10px; */
 }
+/* end footer */
+
+/* start service */
+
+.service-card {
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  :hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+
+  .card1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.card1 img {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}

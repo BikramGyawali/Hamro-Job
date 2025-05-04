@@ -148,6 +148,12 @@
   color: gray;
   text-align: center;
 }
+.jobs p:hover {
+  color: black;
+  cursor: pointer;
+  transform: scale(1.01);
+  transition-duration: 1s;
+}
 
 .option {
   display: flex;

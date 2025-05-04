@@ -47,10 +47,10 @@
 }
 
 .hero-section {
-  background-image: url("../image/home3.png"); /* your path */
+  background-image: url("../image/about.webp"); /* your path */
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 50vh;
   color: white; /* Light color stands out better on dark background */
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@
   color: rgb(180, 2, 180);
 }
 .hero-section p {
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -159,4 +159,71 @@
   font: bolder;
   /* align-items: center; */
   /* padding: 10px; */
+}
+
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 123, 255, 0.15),
+    0 6px 20px 0 rgba(0, 123, 255, 0.15);
+
+  padding: 20px;
+}
+.jobs p {
+  font-size: 20px;
+  color: gray;
+  text-align: center;
+}
+
+/* main section  */
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  /* padding: 20px; */
+  justify-content: space-between;
+  gap: 40px;
+  min-width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 123, 255, 0.15),
+    0 6px 20px 0 rgba(0, 123, 255, 0.15);
+
+  :hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    /* display: block; */
+  }
+
+  .card1 {
+    display: flex;
+
+    /* flex-wrap: wrap-reve; */
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+
+.card1 img {
+  height: 30vh;
+  width: auto;
+  padding: 30px;
+}
+
+.founding-story {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  margin-top: 20px;
+
+  padding: 20px;
 }

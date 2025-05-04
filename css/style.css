@@ -265,6 +265,8 @@
 
 .service-card {
   gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
   border-radius: 20px;
@@ -272,6 +274,23 @@
   :hover {
     cursor: pointer;
     transform: scale(1.01);
+    transition-duration: 1s;
+  }
+}
+
+.training-card {
+  display: flex;
+  /* flex: 4;
+   */
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+
+  :hover {
+    cursor: pointer;
+    transform: scale(1.05);
     transition-duration: 1s;
   }
 }
@@ -283,7 +302,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #fff;
-  max-width: 800px;
+  max-width: 600px;
   margin: 20px auto;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 1);
 }

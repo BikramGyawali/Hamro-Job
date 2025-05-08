@@ -9,6 +9,7 @@
   left: 0;
   width: 100%;
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: flex-start; /* align items to start */
   align-items: center;
   background-color: white;
@@ -52,8 +53,7 @@
   background-image: url("../image/about.webp"); /* or actual file path */
   background-size: cover;
   background-position: center;
-  height: 70vh;
-  margin-top: 20px;
+  height: 50vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -61,17 +61,16 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  /* margin-top: 105px; */
   gap: 20px;
   position: relative;
 
-  padding-top: 30px; /* adjust based on your actual navbar height */
+  padding-top: 120px; /* adjust based on your actual navbar height */
 }
 .hero-section span {
   color: rgb(180, 2, 180);
 }
 .hero-section p {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -83,7 +82,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(22, 0, 0, 0.599); /* dark overlay to enhance contrast */
+  background: rgba(22, 0, 0, 0.769); /* dark overlay to enhance contrast */
   z-index: 1;
 }
 
@@ -92,7 +91,6 @@
   z-index: 2; /* brings text above overlay */
   margin: 0;
 }
-
 .mainfooter {
   display: flex;
   flex-wrap: wrap;

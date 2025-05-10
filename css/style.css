@@ -556,6 +556,16 @@ textarea {
   width: auto;
   height: 70vh;
 }
+.employe-image img {
+  width: auto;
+  height: 70vh;
+  margin-top: 20vh;
+}
+.employelogin-image img {
+  width: auto;
+  height: 60vh;
+  margin-top: 20vh;
+}
 
 .login-form {
   display: flex;
@@ -564,7 +574,7 @@ textarea {
   box-shadow: rgb(102, 101, 101) 0px 0px 10px 0px,
     rgb(102, 101, 101) 0px 0px 20px 0px;
   margin: 20px;
-  padding: 20px;
+  padding: 30px 40px;
   border: 1px solid black;
   border-radius: 10px;
   gap: 20px;

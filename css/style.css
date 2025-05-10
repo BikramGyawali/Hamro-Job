@@ -566,7 +566,7 @@ textarea {
 .login-text h2 {
   text-align: center;
   margin: 10px;
-  color: rgb(145, 49, 145);
+  color: rgb(180, 2, 180);
 }
 
 .login-form p {
@@ -605,4 +605,24 @@ form input:focus {
   outline: none;
   border-color: rgb(180, 2, 180);
   box-shadow: 0 0 10px rgb(180, 2, 180);
+}
+
+button {
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  background: rgb(180, 2, 180);
+  /* margin: 10px; */
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition-duration: 1s;
+  background-color: rgb(2, 105, 2);
+  color: white;
 }

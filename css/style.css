@@ -539,14 +539,15 @@ textarea {
 /* login section  */
 .login-container {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin-top: 20vh;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .login-image img {
-  width: 50vw;
-  height: 50vh;
+  width: auto;
+  height: 70vh;
 }
 
 .login-form {
@@ -565,18 +566,19 @@ textarea {
 .login-text h2 {
   text-align: center;
   margin: 10px;
+  color: rgb(145, 49, 145);
 }
 
-.login-text p {
+.login-form p {
   text-align: center;
   font-size: 20px;
-  color: black;
+  color: rgb(1, 1, 1);
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
 }
 form .login-email {
@@ -597,4 +599,10 @@ form input {
   margin-top: 5px;
   justify-content: center;
   align-items: center;
+  color: black;
+}
+form input:focus {
+  outline: none;
+  border-color: rgb(180, 2, 180);
+  box-shadow: 0 0 10px rgb(180, 2, 180);
 }

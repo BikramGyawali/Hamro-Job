@@ -544,6 +544,13 @@ textarea {
   flex-wrap: wrap;
   gap: 20px;
 }
+.register-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
 .login-image img {
   width: auto;

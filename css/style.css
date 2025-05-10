@@ -65,6 +65,8 @@
   list-style: none;
   min-width: 150px;
   border-radius: 12px;
+  transform: translateY(-10px); /* Initial position for animation */
+  transition: opacity 0.3s ease, transform 0.3s ease, backdrop-filter 0.3s;
 }
 
 .dropdown li {
@@ -94,10 +96,11 @@
 }
 
 /* Show the dropdown on hover */
-.dropdown-container:hover .dropdown,
-.dropdown-container .dropdown-toggle:hover + .dropdown {
+.dropdown-container:hover .dropdown {
   display: block;
   backdrop-filter: blur(20px);
+  opacity: 1; /* Fade-in */
+  transform: translateY(0);
   border: 2px solid rgba(255, 255, 255, 0.18);
 }
 

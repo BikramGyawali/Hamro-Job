@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
   <body>
     <div class="maincontainer">
@@ -64,9 +69,9 @@
     <div class="service">
       <h2>Our Trainings</h2>
       <div class="training-card">
-        <div class="card1">
+        <div class="card1" data-aos="fade-up">
           <img src="../image/ui.png" alt="UI/UX Design Training" />
-          <div class="card-content">
+          <div class="card-content" data-aos="fade-up">
             <h3>UI/UX Design</h3>
             <p>
               Learn the art of creating intuitive and engaging user interfaces.
@@ -76,9 +81,9 @@
           </div>
         </div>
 
-        <div class="card1">
+        <div class="card1" data-aos="fade-up">
           <img src="../image/digital.jpg" alt="Digital Marketing Training" />
-          <div class="card-content">
+          <div class="card-content" data-aos="fade-up">
             <h3>Digital Marketing</h3>
             <p>
               Master digital strategies including SEO, social media marketing,
@@ -88,7 +93,7 @@
           </div>
         </div>
 
-        <div class="card1">
+        <div class="card1" data-aos="fade-up">
           <img src="../image/full.avif" alt="Coding Bootcamp" />
           <div class="card-content">
             <h3>Full-Stack Coding</h3>
@@ -100,7 +105,7 @@
           </div>
         </div>
 
-        <div class="card1">
+        <div class="card1" data-aos="fade-up">
           <img src="../image/communication.webp" alt="Communication Skills" />
           <div class="card-content">
             <h3>Communication Skills</h3>
@@ -112,7 +117,7 @@
           </div>
         </div>
 
-        <div class="card1">
+        <div class="card1" data-aos="fade-up">
           <img src="../image/graphics.jpg" alt="Graphic Design Training" />
           <div class="card-content">
             <h3>Graphic Design</h3>
@@ -124,7 +129,7 @@
           </div>
         </div>
 
-        <div class="card1">
+        <div class="card1" data-aos="fade-up">
           <img src="../image/excel.png" alt="Advanced Excel Training" />
           <div class="card-content">
             <h3>Advanced Excel</h3>
@@ -135,7 +140,7 @@
             </p>
           </div>
         </div>
-        <div class="card1">
+        <div class="card1" data-aos="fade-up">
           <img src="../image/driving.jpg" alt="Driving Training" />
           <div class="card-content">
             <h3>Driving</h3>
@@ -146,7 +151,7 @@
             </p>
           </div>
         </div>
-        <div class="card1">
+        <div class="card1" data-aos="fade-up">
           <img src="../image/beauty.jpg" alt="Beauty Parlor Training" />
           <div class="card-content">
             <h3>Beauty Parlor</h3>
@@ -228,5 +233,14 @@
       </div>
     </footer>
     <!-- End footer -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 650,
+          once: true,
+        });
+      });
+    </script>
   </body>
 </html>

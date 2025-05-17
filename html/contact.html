@@ -18,6 +18,9 @@
             <img src="../image/logo.png" alt="Hamro Job Logo" />
           </a>
         </div>
+        <div class="vnav" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
         <div class="navlist">
           <ul>
             <li><a href="../html/home.html"> Home</a></li>
@@ -213,5 +216,20 @@
       </div>
     </footer>
     <!-- End footer -->
+    <script>
+      function toggleMenu() {
+        const navlist = document.querySelector(".navlist");
+        const menu = document.querySelector(".vnav i");
+
+        navlist.classList.toggle("active");
+        if (navlist.classList.contains("active")) {
+          menu.classList.remove("fa-bars");
+          menu.classList.add("fa-xmark");
+        } else {
+          menu.classList.add("fa-bars");
+          menu.classList.remove("fa-xmark");
+        }
+      }
+    </script>
   </body>
 </html>

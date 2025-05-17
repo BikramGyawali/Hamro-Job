@@ -163,8 +163,8 @@
     /* font-size: 24px;
      */
   }
-  .login-container,
-  .login-image {
+  .login-container .login-image,
+  .employelogin-image {
     display: none;
   }
   .register-container .employe-image {

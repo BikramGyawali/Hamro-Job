@@ -78,7 +78,7 @@
 }
 
 .dropdown li a:hover {
-  color: rgba(180, 2, 180, 1) !important;
+  color: red !important;
 }
 .dropdown-toggle > span {
   /* text-align: center; */
@@ -94,13 +94,135 @@
 }
 
 /* Show the dropdown on hover */
-.dropdown-container:hover .dropdown,
-.dropdown-container .dropdown-toggle:hover + .dropdown {
+.dropdown-container:hover .dropdown {
   display: block;
   backdrop-filter: blur(20px);
+  /* background-color: black; */
   border: 2px solid rgba(255, 255, 255, 0.18);
 }
 
+.dropdown-container:hover .new {
+  display: block;
+  backdrop-filter: blur(20px);
+  background-color: rgb(167, 159, 159);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Responsive nar bar */
+@media screen and (max-width: 768px) {
+  .vnav {
+    display: block;
+  }
+  .navlist {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(
+      167,
+      159,
+      159,
+      0.5
+    ); /* Reduce opacity for more transparency */
+    box-shadow: rgb(102, 101, 101) 0px 0px 10px 0px,
+      rgb(102, 101, 101) 0px 0px 20px 0px;
+    backdrop-filter: blur(3px); /* Increased blur for a stronger effect */
+    z-index: 20;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+  }
+  .navlist.active {
+    display: flex; /* show the nav list */
+  }
+  .navlist ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .navlist ul li a:hover {
+    color: rgba(0, 77, 77, 1);
+    /* font-size: 24px;
+     */
+  }
+  .login-container,
+  .login-image {
+    display: none;
+  }
+  .register-container .employe-image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navlist {
+    width: 70vw;
+    height: 50vh;
+  }
+  .navlist li a {
+    font-size: 30px;
+    /* color: red; */
+  }
+  .navlist ul li a:hover {
+    color: rgba(0, 77, 77, 1);
+    /* font-size: 24px;
+     */
+  }
+  .login-container,
+  .login-image {
+    display: none;
+  }
+  .register-container .employe-image {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .navlist a {
+    text-align: end;
+    font-size: 24px;
+  }
+  .navbar {
+    align-items: center;
+    width: 100vw;
+    /* gap: 2px; */
+    /* height: ; */
+  }
+}
+.vnav {
+  display: none; /* show the hamburger icon */
+}
+
+@media only screen and (min-width: 992px) {
+  .navlist {
+    width: 100vw;
+    /* height: 50vh; */
+  }
+  .navlist li a {
+    font-size: 30px;
+    /* color: red; */
+  }
+  .navlist ul li a:hover {
+    color: rgba(0, 77, 77, 1);
+    /* font-size: 24px;
+     */
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .card-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
 .hero-section {
   background-image: url("../image/about.webp"); /* or actual file path */
   background-size: cover;

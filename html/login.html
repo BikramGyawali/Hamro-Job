@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="../html/home.html">
+          <img src="../image/logo.png" alt="Hamro Job Logo" />
+        </a>
+      </div>
+      <div class="navlist">
+        <ul>
+          <li><a href="../html/home.html">Home</a></li>
+          <li><a href="../html/service.html">Service</a></li>
+          <li><a href="../html/training.html">Training</a></li>
+          <li><a href="../html/contact.html">Contact Us</a></li>
+          <li class="dropdown-container">
+            <div class="dropdown-toggle">
+              <span>For Jobseeker</span>
+            </div>
+            <ul class="dropdown jobseeker-dropdown new">
+              <li><a href="../html/login.html">Login</a></li>
+              <li><a href="../html/register.html">Create Account</a></li>
+              <li><a href="../html/training.html">Training</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown-container">
+            <div class="dropdown-toggle">
+              <span>For Employer</span>
+            </div>
+            <ul class="dropdown employer-dropdown new">
+              <li><a href="../html/employelogin.html">Login</a></li>
+              <li><a href="../html/employeregister.html">Create Account</a></li>
+              <li><a href="../html/service.html"> Services</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- start of login  -->
+
+    <div class="login-container">
+      <div class="login-image">
+        <img src="../image/login.png" alt="login image" />
+      </div>
+      <div class="login-form">
+        <div class="login-text">
+          <h2>Welcome to Hamro Job</h2>
+          <p>Get started with latest job vacancies in Nepal for free.</p>
+        </div>
+        <div class="main-form">
+          <form action="">
+            <label for="email">Email:</label>
+            <input type="email" placeholder=" Email Address " id="email" />
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              placeholder=" Password "
+              id="password"
+              required
+            />
+          </form>
+        </div>
+        <button type="submit">Login</button>
+        <div class="account">
+          <p>
+            New to Hamro Job ? &nbsp;
+            <a href="../html/register.html">Create Account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end of login  -->
+  </body>
+</html>

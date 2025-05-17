@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="navbar">
@@ -12,6 +16,9 @@
         <a href="../html/home.html">
           <img src="../image/logo.png" alt="Hamro Job Logo" />
         </a>
+      </div>
+      <div class="vnav" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
       </div>
       <div class="navlist">
         <ul>
@@ -78,5 +85,20 @@
       </div>
     </div>
     <!-- end of login  -->
+    <script>
+      function toggleMenu() {
+        const navlist = document.querySelector(".navlist");
+        const menu = document.querySelector(".vnav i");
+
+        navlist.classList.toggle("active");
+        if (navlist.classList.contains("active")) {
+          menu.classList.remove("fa-bars");
+          menu.classList.add("fa-xmark");
+        } else {
+          menu.classList.add("fa-bars");
+          menu.classList.remove("fa-xmark");
+        }
+      }
+    </script>
   </body>
 </html>

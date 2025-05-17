@@ -31,7 +31,9 @@
   margin: 0;
   padding: 0;
 }
-
+.navlist {
+  display: flex;
+}
 .navlist ul li a {
   text-decoration: none;
   text-align: center;
@@ -106,6 +108,11 @@
   backdrop-filter: blur(20px);
   background-color: rgb(167, 159, 159);
   border: 2px solid rgba(255, 255, 255, 0.18);
+}
+.vnav {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Responsive nar bar */
@@ -190,9 +197,6 @@
     /* gap: 2px; */
     /* height: ; */
   }
-}
-.vnav {
-  display: none; /* show the hamburger icon */
 }
 
 @media only screen and (min-width: 992px) {

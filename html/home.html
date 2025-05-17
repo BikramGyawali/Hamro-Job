@@ -331,7 +331,13 @@
 
     <script>
       function toggleMenu() {
-        document.querySelector(".navlist").classList.toggle("active");
+        const navlist = document.querySelector(".navlist");
+        const heroSection = document.querySelector(".hero-section");
+
+        // Toggle the active class for the navlist
+        navlist.classList.toggle("active");
+
+        
       }
     </script>
   </body>

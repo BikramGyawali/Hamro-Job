@@ -23,11 +23,6 @@
 .logo img {
   height: 50px; /* control logo size */
 }
-.vnav {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
 
 .navlist ul {
   list-style: none;
@@ -63,7 +58,9 @@
 }
 
 .vnav {
-  display: none; /* show the hamburger icon */
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Common Styles for Dropdowns */

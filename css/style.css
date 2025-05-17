@@ -62,11 +62,15 @@
   /* margin-left: 100px; */
 }
 
+.vnav {
+  display: none; /* show the hamburger icon */
+}
+
 /* Common Styles for Dropdowns */
 
-.dropdown-container {
+/* .dropdown-container {
   position: relative;
-}
+} */
 .dropdown {
   backdrop-filter: blur(40px);
   border: 2px solid rgba(255, 255, 255, 0.18);
@@ -124,7 +128,7 @@
 /* Responsive nar bar */
 @media screen and (max-width: 768px) {
   .vnav {
-    display: none;
+    display: block;
   }
   .navlist {
     display: none;
@@ -135,27 +139,20 @@
     background-color: white;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 20;
   }
-
+  .navlist.active {
+    display: flex; /* show the nav list */
+  }
   .navlist ul {
-    display: none; /* hide the nav list */
     flex-direction: column;
-    width: 100%;
+    gap: 10px;
   }
-  .navlist ul li {
-    width: 100%;
-    text-align: center;
-  }
-  .navlist ul li a {
-    padding: 10px;
-    width: 100%;
-    display: block;
-  }
-  .vnav {
-    display: block; /* show the hamburger icon */
+  .dropdown {
+    position: static;
   }
 }
+
 .hero-section {
   background-image: url("../image/home3.png"); /* or actual file path */
   background-size: cover;

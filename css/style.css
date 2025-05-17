@@ -23,6 +23,11 @@
 .logo img {
   height: 50px; /* control logo size */
 }
+.vnav {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 .navlist ul {
   list-style: none;
@@ -31,6 +36,9 @@
   align-items: center;
   margin: 0;
   padding: 0;
+}
+.navlist {
+  display: flex;
 }
 
 .navlist ul li a {
@@ -55,6 +63,10 @@
 }
 
 /* Common Styles for Dropdowns */
+
+.dropdown-container {
+  position: relative;
+}
 .dropdown {
   backdrop-filter: blur(40px);
   border: 2px solid rgba(255, 255, 255, 0.18);
@@ -107,6 +119,42 @@
   backdrop-filter: blur(20px);
   background-color: rgb(167, 159, 159);
   border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Responsive nar bar */
+@media screen and (max-width: 768px) {
+  .vnav {
+    display: none;
+  }
+  .navlist {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .navlist ul {
+    display: none; /* hide the nav list */
+    flex-direction: column;
+    width: 100%;
+  }
+  .navlist ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .navlist ul li a {
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+  .vnav {
+    display: block; /* show the hamburger icon */
+  }
 }
 .hero-section {
   background-image: url("../image/home3.png"); /* or actual file path */

@@ -136,7 +136,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    width: 40vw;
+    width: 50vw;
     height: 50vh;
     background-color: rgba(
       167,
@@ -160,10 +160,56 @@
     gap: 15px;
     align-items: flex-start;
   }
+
   .navlist ul li a:hover {
     color: rgba(0, 77, 77, 1);
     /* font-size: 24px;
      */
+  }
+  .login-container,
+  .login-image {
+    display: none;
+  }
+  .register-container .employe-image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navlist {
+    width: 70vw;
+    height: 50vh;
+  }
+  .navlist li a {
+    font-size: 30px;
+    /* color: red; */
+  }
+  .navlist ul li a:hover {
+    color: rgba(0, 77, 77, 1);
+    /* font-size: 24px;
+     */
+  }
+  .login-container,
+  .login-image {
+    display: none;
+  }
+  .register-container .employe-image {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .navlist a {
+    text-align: end;
+    font-size: 24px;
+  }
+  .navbar {
+    align-items: center;
+    width: 100vw;
+    /* gap: 2px; */
+    /* height: ; */
+  }
+  .navlist {
+    height: 40vh;
+    width: 60vw;
   }
 }
 
@@ -618,12 +664,12 @@ textarea {
 }
 .employe-image img {
   width: auto;
-  height: 70vh;
+  height: 60vh;
   margin-top: 20vh;
 }
 .employelogin-image img {
   width: auto;
-  height: 60vh;
+  height: 50vh;
   margin-top: 20vh;
 }
 

@@ -13,7 +13,7 @@
   <body>
     <div class="navbar">
       <div class="logo">
-        <a href="../html/home.html">
+        <a href="home.html">
           <img src="../image/logo.png" alt="Hamro Job Logo" />
         </a>
       </div>
@@ -22,18 +22,19 @@
       </div>
       <div class="navlist">
         <ul>
-          <li><a href="../html/home.html">Home</a></li>
-          <li><a href="../html/service.html">Service</a></li>
-          <li><a href="../html/training.html">Training</a></li>
-          <li><a href="../html/contact.html">Contact Us</a></li>
+          <li><a class="active" href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li class="dropdown-container">
             <div class="dropdown-toggle">
               <span>For Jobseeker</span>
             </div>
             <ul class="dropdown jobseeker-dropdown new">
-              <li><a href="../html/login.html">Login</a></li>
-              <li><a href="../html/register.html">Create Account</a></li>
-              <li><a href="../html/training.html">Training</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Create Account</a></li>
+              <li><a href="training.html">Training</a></li>
             </ul>
           </li>
 
@@ -42,9 +43,9 @@
               <span>For Employer</span>
             </div>
             <ul class="dropdown employer-dropdown new">
-              <li><a href="../html/employelogin.html">Login</a></li>
-              <li><a href="../html/employeregister.html">Create Account</a></li>
-              <li><a href="../html/service.html"> Services</a></li>
+              <li><a href="employelogin.html">Login</a></li>
+              <li><a href="employeregister.html">Create Account</a></li>
+              <li><a href="service.html"> Services</a></li>
             </ul>
           </li>
         </ul>
@@ -53,31 +54,16 @@
 
     <!-- start resister  -->
     <div class="register-container">
-      <div class="employe-image">
-        <img src="../image/registerforemploye.png" alt="login image" />
+      <div class="login-image">
+        <img src="../image/finalregister.jpg" alt="login image" />
       </div>
       <div class="login-form">
         <div class="login-text">
           <h2>Welcome to Hamro Job</h2>
-          <p>Get started with finding the right talent from Hamro Job.</p>
+          <p>Get started with latest job vacancies in Nepal for free.</p>
         </div>
         <div class="main-form">
           <form action="">
-            <label for="company">Company:</label>
-            <input
-              type="text"
-              placeholder="Company Name"
-              id="company"
-              required
-            />
-            <label for="pan">Citizenship Number</label>
-            <input
-              type="text"
-              placeholder="90-01-80-02987"
-              id="pan"
-              required
-              pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{5}"
-            />
             <label for="email">Email:</label>
             <input type="email" placeholder=" Email Address " id="email" />
             <label for="mobile">Mobile Number</label>
@@ -106,7 +92,7 @@
         <div class="account">
           <p>
             Already have an account?
-            <a href="../html/employelogin.html">Sign in</a>
+            <a href="login.html">Sign in</a>
           </p>
         </div>
       </div>
